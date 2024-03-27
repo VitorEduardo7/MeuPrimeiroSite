@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Primero Site</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h2{
+            color: brown;
+        }
+
+        li{
+            list-style-type: circle;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        th{color: red
+        }
+        
+        td {
+  text-align: center;
+        }   
+    
+        body{
+            margin: auto;
+            width: 80%;
+        }
+        </style>
 </head>
-<body> 
-    <h1>Desenvolvimento Web</h1>
+
+<body>
+    <h1 style="color: red; font-size: 55px;">Desenvolvimento Web</h1>
     <p></p>
-    <h2>O que é HTML?</h2>
+    <h2 style="color: blue;">O que é HTML?</h2>
     <p>
         HTML é a linguagem de marcação padrão para a criação de páginas da Web.
     </p>
@@ -53,19 +81,19 @@
             <th>MINUTOS</th>
             <th>VALOR</th>
             <th>TOTAL</th>
-            <TD>ANO</TD>
+            
         </tr>
             <TD>15</TD>
             <TD>45</TD>
             <TD>25</TD>
             <TD>669,37 </TD>
-            <TD>2021</TD>
+            
         <tr>
             <TD>15</TD>
             <TD>45</TD>
-            <TD>100</TD>
+            <TD style="background-color: red; color:greenyellow;" >100</TD>
             <TD>2677,50</TD>
-            <TD>2022</TD>
+            
         </tr>
 
         <tr>
@@ -73,7 +101,7 @@
             <TD>0</TD>
             <TD>25</TD>
             <TD>850,00</TD>
-            <TD>2023</TD>
+            
         </tr>
 
     </Table>
@@ -82,22 +110,24 @@
 
     <h2>Atributos - tags - HTML</h2>
 
-    <table>
+    <table border="1,5">
         <tr>
         <th>Atributos</th>
         <th>Descrição</th>
         <th>Exemplo</th>
     </tr>
 
+    
     <tr>
         <td>P</td>
         <td>Um parágrafo sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço em branco (uma margem) antes e depois de um parágrafo.</td>
-        <td></td>
+        <td> <code> &lt;p&gt; este é o código para criar um parágrafo  </code></td>
     </tr>
 
     <tr>
     <td>UL</td>
     <td> representa uma lista de itens sem ordem rígida</td>
+    <td> <code> &lt;ul&gt; sua lista é representada por "&8729" </code></td>
     </tr>
 
     <tr>
