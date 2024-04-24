@@ -40,6 +40,37 @@
         background-color: rgb(112, 48, 160);
         padding: 3%;
     }
+
+    .cabecalho{
+        padding: 3%;
+    }
+    .Rodapé{
+        padding: 3%;
+    }
+    h1,h2{
+        line-height: 3;
+    }
+    p{
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    ul, li {
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+
+    .titulos{
+        line-height: 3;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
     
     </style>
 <body>
@@ -51,12 +82,71 @@
                 <p>Aqui vai o menu</p>
             </nav>
     </header>
+    
     <main>
-        <section>Primeira Sessão</section>
-        <section>Segunda Sessão</section>
-        <section>Terceira Sessão</section>
+        <h1 class="titulos">INTRODUÇÃO AO HTML</h1>
+        <section>
+            <h2 class="ti">o que é HTML?</h2>
+            <p>
+                HTML é uma linguagem de marcação utilizada na contrução de páginas na web.
+                Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto
+                da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação
+                estruturada de hipermídia e conteúdo baseado em tempo. 
+            </p>
+        <p>Principais tópicos de HTML</p>
+        <ul>
+            <li>HTML significa linguagem de marcação para a criação de páginas da Web </li>
+            <li>HTML é a linguagem de marcação padrão para criação de páginas de Web</li>
+            <li>HTML descreve a estrutura de uma página da Web</li>
+        </ul>
+
+        <h2>O que é o CSS?</h2>
+        <p>
+            Casgading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicando diretamente nas tags HTML ou ficar contido dentro das Tags &lt;style&gt;
+            também é possível, adicionar estilos adicionados a um link para um arquivo CSS que contém os estilos.
+            Principais tópicos de CSS
+            CSS significa folhas de estilo em cascata 
+            CSS descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outras mídias.
+            CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web de uma só vez
+            Folhas de estilo externas são armazenadas em arquivos CSS
+        </p>
+
+        <h2>O que é JS?</h2>
+        <p>
+            JavaScrpit é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamenete com HTML e 
+            CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.
+            Funcionamento do JS 
+            O navegador carrega uma página da Web quando você a acessa.
+            Durante o carregamento, o navegador converte a página e todos os seus elementos, como botões, rótulos e caixas de menu suspenso, em uma estrutura de dados
+            chamada Modelo de Objeto de Documento(Dom)
+            O Mecanismo JavaScript do navegador converte o código JavaScript em código de Bytes. Esse código é um intermediário entre a sintaxe em JavaScript e a máquina.
+            Eventos diferentes , como o clique do mouse em um botão, acionam a execução do bloco de código associado em JavaScript. Em Seguida, o mecanismo interpreta o 
+            código de Bytes e faz alterações no DOM 
+            O Navegador exibe o novo DOM  
+        </p>
+
+        <br>
+        <table>
+            <tr>
+              <th>agosto de 2021</th>
+              <th>agosto de  2020</th>
+              <th>Linguagem de Programação 3</th>
+              <th>Avaliações</th>
+              <th>Modulação</th>
+            </tr>
+            <tr>
+              <td>Emil</td>
+              <td>Tobias</td>
+              <td>Linus</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>14</td>
+              <td>10</td>
+            </tr>
+          </table>
     </main>
-    <footer>
+    <footer class="Rodapé">
         <p>Rodapé da Página</p>
     </footer>
 </body>
