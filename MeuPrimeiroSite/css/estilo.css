@@ -3,12 +3,15 @@ body{
     background-image: url(../img/2191531-bola-de-futebol-no-fundo-azul-vetor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    font-family: "Freeman", sans-serif;
 }
 
 header{
     /* background-color: rgb(77, 139, 195); */
     padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
@@ -38,16 +41,17 @@ footer{
 .cabecalho{
     padding: 3%;
 }
+
 .Rodapé{
     /* padding: 3%; */
 }
-h1,h2{
-    line-height: 3;
-}
+
 p{
     font-size: 1.2em;
     line-height: 1.5;
+    text-align: justify;
 }
+
 ul, li {
     line-height: 1.5;
     font-size: 1.2em;
@@ -57,6 +61,7 @@ ul, li {
     line-height: 3;
     text-align: center;
     font-weight: bold;
+    color: yellowgreen;
 }
 
 h1{
@@ -69,4 +74,20 @@ h2{
 .logo img{
     width: 35%;
     height: auto;
+}
+
+.caixa-imagem {
+    text-align: center;
+    margin-top: 1%;
+}
+
+figure {
+    text-align: center;
+    display: inline-block;
+}
+
+figure figcaption{
+    margin: 1.0cm;
+    text-align: center;
+    color: brown;
 }
