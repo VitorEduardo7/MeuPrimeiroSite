@@ -1,9 +1,10 @@
 body{
     /* background-color: rgb(191, 191, 191); */
-    background-image: url(../img/2191531-bola-de-futebol-no-fundo-azul-vetor.jpg);
+    /*background-image: url(../img/2191531-bola-de-futebol-no-fundo-azul-vetor.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Freeman", sans-serif;
+    background-color: aquamarine;
 }
 
 header{
@@ -14,7 +15,7 @@ header{
     align-items: center;
 }
 
-.logo{
+.logo{ 
     /* background-color: rgb(255, 255, 0); */
 }
 
@@ -24,6 +25,9 @@ nav{
 
 main{
     /* background-color: rgb(146,208,80); */
+    margin-top: 70px;
+    padding: 20px;
+
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -40,6 +44,11 @@ footer{
 
 .cabecalho{
     padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+
 }
 
 .Rodapé{
@@ -52,6 +61,72 @@ p{
     text-align: justify;
 }
 
+/* Menu */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+ nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: grey;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 0;
+    }
+
+#menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+}
+
+nav ul li {
+        text-align: center;
+        margin: 0;
+}
+
+nav ul li a {
+        padding: 15px 0;
+}
+
+    nav ul li label {
+        width: 100%;
+        display: block;
+}
+
+/* fim do menu */
 ul, li {
     line-height: 1.5;
     font-size: 1.2em;
@@ -61,7 +136,7 @@ ul, li {
     line-height: 3;
     text-align: center;
     font-weight: bold;
-    color: yellowgreen;
+    color: orange;
 }
 
 h1{
@@ -77,7 +152,7 @@ h2{
 }
 
 .caixa-imagem {
-    text-align: center;
+    text-align: left;
     margin-top: 1%;
 }
 
