@@ -3,161 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primero Site</title> 
+    <title>O Mundo do Futebol</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
-
-    <style>
-        body{
-            background-color: lavender;
-        }   
-    
-        li{
-            list-style-type: circle;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-        th{color: red
-        }
-        
-        td {
-  text-align: center;
-        }   
-    
-        body{
-            margin: auto;
-            width: 80%;
-        }
-        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="ball.ico" type="image/x-icon"> 
 </head>
 
 <body>
-    <h1 style="color: red; font-size: 55px;">Desenvolvimento Web</h1>
-    <p>TESTE</p>
-    <h2>O que é HTML?</h2>
-    <p>
-        HTML é a linguagem de marcação padrão para a criação de páginas da Web.
-    </p>
-<ul>
-    <li>HTML significa linguagem de marcação de hipertexto</li>
-    <li>HTML é a linguagem de marcação padrão para criação de páginas da Web</li>
-    <li>HTML descreve a estrutura de uma página da Web</li>
-    <li>HTML consiste em uma série de elementosl</li>
-    <li>Os elementos HTML informam ao navegador como exibir o conteúdo</li>
-    <li>Os elementos HTML rotulam partes do conteúdo como “este é um título”, “este é um parágrafo”, “este é um link”, etc.</li>
-</ul>
-<img src="img/Estrutura.png" alt="Estrutura básica do HTML" width="500" height="333">
-
-
-
-    <h2>O que é CSS?</h2>
-    <p>
-        CSS é a linguagem que usamos para estilizar uma página da Web.
-    </p>
-<ul>
-<LI>CSS significa Folhas de Estilo em Cascata</li>
-<LI>CSS descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outras mídias</li>
-<LI>CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web de uma só vez</li>
-<LI>Folhas de estilo externas são armazenadas em arquivos CSS</li>
-</ul>
-<img src="img/Estrutura do CSS.jpg" alt="Estrutura básica do CSS" width="500" height="333">
-
-    <h2>O que é JavaScript?</h2>
-    <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web</p>
-    <ul>
-        <li>criar conteúdo que se atualiza dinamicamente</li>
-        <li>controlar múltimídias</li>
-        <li>imagens animadas</li>
-        <li>Armazenar conteúdo útil em variáveis</li>
-    </ul>
-    <img src="img/Estrutura JavaScrpit.png" alt="Estrutura básica do CSS" width="500" height="333">
-
-    <BR></BR>
-    <table BORDER= "1">
-        <tr>
-            <th>HORA</th>
-            <th>MINUTOS</th>
-            <th>VALOR</th>
-            <th>TOTAL</th>
-            
-        </tr>
-            <TD>15</TD>
-            <TD>45</TD>
-            <TD>25</TD>
-            <TD>669,37 </TD>
-            
-        <tr>
-            <TD>15</TD>
-            <TD>45</TD>
-            <TD style="background-color: red; color:greenyellow;" >100</TD>
-            <TD>2677,50</TD>
-            
-        </tr>
-
-        <tr>
-            <TD>20</TD>
-            <TD>0</TD>
-            <TD>25</TD>
-            <TD>850,00</TD>
-            
-        </tr>
-
-    </Table>
-
-    <br>
-
-    <h2>Atributos - tags - HTML</h2>
-
-    <table border="1,5">
-        <tr>
-        <th>Atributos</th>
-        <th>Descrição</th>
-        <th>Exemplo</th>
-    </tr>
-
+    <header>
+        <div class="logo">
+            <img src="ball.ico" alt="bola">
+        </div>
+        <nav id="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul>
+                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">De onde e como Surgiu?</a></li>
+                <li><a href="#" onclick="document.getElementById('menu-menu-toggle').click()"> Como chegou ao Brasil?</a> </li>
+                <li><a href="#" onclick="document.getElementById('menu-toggle').click()"> Quão praticado é?</a></li>
+                <li><a href="#" onclick="document.getElementById('menu-toggle').click()"> Copa do Mundo</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <tr>
-        <td>P</td>
-        <td>Um parágrafo sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço em branco (uma margem) antes e depois de um parágrafo.</td>
-        <td> <code> &lt;p&gt; este é o código para criar um parágrafo  </code></td>
-    </tr>
+    <main>
+        <h1 class="titulos">Origem</h1>
+        <section>
+            <h2 class="titulos">De onde e como Surgiu?</h2>
+            
+            <p>É complicado dizermos onde surgiu o futebol já que muitos esportes com bola como ele já eram praticados por povos antigos na terra.
+                Mas as origens mais populares são na china a muitos aonos com o chmado "Cuju" com uma bola feita de penas, já na inglaterra tivemos o Futebol Moderno quando foram estabelecidas o as regras do futebol que conheçemos hoje.
+            </p>
+        </section>
+        <section>
+            <h2 class="titulos"> Como chegou ao Brasil?</h2>
+            <p>
+                O futebol chegou no brasil no final do séceulo XIX por Charles Miller, ele era um estudante paulista que retornou da inglaterra em 1894 na sua bagagem trouxe diversos artigos, como bolas, uniformes e um livro com regras estabelecidas
+                por conta disso é considerado como o pai do esporte no Brasil.
+            </p>
+            
+            <p>
+                O futebol rapidamente se popularizou na sociedade. No começo a pratica do esporte aconteceu na elite do país pois era restrito à aristrocracia na sociedade brasileira, 
+                mas com o crescimento urbano do país, o esporte popularizou-se entre as camadas populares com a organização de clubes de futebol. Com o passar do tempo o Brasil se tornou uma potência futebolística com a seleção brasileira masculino sendo 5 vezes campeão da copa do mundo (1958,1962,1970,1994 e 2002) 
+            </p>
 
-    <tr>
-    <td>UL</td>
-    <td> representa uma lista de itens sem ordem rígida</td>
-    <td> <code> &lt;ul&gt; sua lista é representada por "&8729" </code></td>
-    </tr>
+            <div class="caixa-imagem">
+                <figure>
+                    <img src="img/cafu_2.jpg" alt="Jogador de futebol Cafú segurando a taça da copa do mundo de 2002 ganha pelo Brasil.">
+                    <figcaption>Jogador de futebol Cafú</figcaption>
 
-    <tr>
-        <td>H1</td>
-        <td>Os títulos HTML são títulos ou legendas que você deseja exibir em uma página da web. </td>
-        <td> <code> &lt;h1> Heading 1 &lt;/h1&gt; </td>
-    </tr>
-
-    <tr>
-        <td>img</td>
-        <td>A tag HTML img é usada para incorporar uma imagem em uma página da web.</td>
-        <td> <code> &lt; img src="img/onde esta sua imagem.Tipo da Imagem" alt="Descrição da Sua Imagem" width="largura" height="altura"&gt; </code> </td>
-    </tr>
-       
-
-    
-    </table>
+                </figure>
+            </div>
 
 
 
-    <h2>Tecnologias</h2>
-    <ul>
-        <li>Html</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li> 
-        <li>Java</li>
-        <li>Pyhthon</li>
-    </ul>
+        </section>
 
-    <a href="outro.html">Outra página</a>
+        <section>
+            <h2 class="titulos">Quão praticado é? </h2>
+            <p>
+                Aproximadamente 270 Milhões de pessoas estão envolvidos no esporte, sendo jogadores, arbitros e diretores. Destas, 265 Milhões aproximamente jogam o esporte regurlamente de forma profissional, semiprofissional ou mesmo amadora, isso considerando homens, mulheres, jovens e crianças esse valor representa 4%
+                da população mundial existem mais de 1,7 milhões de equipes no mundo aproximamente 301 mil clubes.
 
-</Body>
+                <div class="caixa-imagem">
+                    <figure>
+                        <img src="img/FACUP-1872.jpg" alt="Pessoas jogando futebol antigo em desenho feito a muito tempo" width="500" height="333">
+                        <figcaption>Futebol antigo</figcaption>
+                    </figure>
+                </div>
+            </p>
+        </section>
+
+        <section>
+            <h2 class="titulos">Copa do Mundo</h2>
+            <p>
+                A Copa do Mundo ocorre de 4 em 4 anos sendo a maior competição esportiva do mundo, acontecendo desde 1930 tendo 22 edições desde de sua criação execeto em 1942 e 1946 devido a segunda guerra mundial, sua primeira edição como foi dita em 1930 no Uruguai escolhido como o país sede da competição além de ter saido campeão da primeira copa do mundo. Até o momento foram 8 países campeões mundiais sendo eles: Alemanha, Itália, Argentina, França, Uruguai, Espanha, Inglaterra e Brasil, esse sendo o único que jogou todas as edições e maior campeão com cinco titulos (1958, 1962, 1970, 1994 e 2002.)
+            </p>            
+        </section>
+
+        <section>
+            <h2 class="titulos">Pelé: O Rei</h2>
+            <p>
+                Como em todo o esporte sempre tem aquele jogador que reconhecido por ser o maior e melhor do seu esporte e claro que não seria diferente no futebol, muitos jogadores tem esse titulo de melhor da história... Cristiano Ronaldo, Messi, Ronaldinho. Mas o nome mais falado e reconhecido como melhor da história é o Pelé, conhecido como "O Rei do futebol" Edson Arantes do Nascimento foi um jogador de futebol muito reconhecido durante sua carreira, começou jogando no Bauru um time de jovens da região e logo depois foi para ao Santos aos 15 Anos, e rapidamente subiu para a seleção brasileira aos dezesseis anos onde um ano depois foi campeão da copa do mundo aos dezessete anos de idade e não foi a única pois é o único jogador da história com três copas do mundo.
+            </p>
+
+            <div class="caixa-imagem">
+                <figure>
+                    <img src="img/Pele_con_brasil_(cropped).jpg" alt="Pelé">
+                    <figcaption>Pelé</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+    <footer class="Rodapé">
+        <p>Vitor Eduardo 1F</p>
+    </footer>
+</body>
 </html>
